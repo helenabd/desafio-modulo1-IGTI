@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Desafio - Módulo 1</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="center">Pesquisa de Usuários</h1>
+
+      <div id="spinner" class="flex-row">
+        <div class="preloader-wrapper small active">
+          <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+        <span>Aguarde...</span>
+      </div>
+
+      <div class="flex-row flex-center">
+        <input type="text" id="inputSearch" placeholder="Busca" />
+        <button
+          id="buttonSearch"
+          class="waves-effect waves-light btn"
+          style="margin-left: 5px;"
+        >
+          Buscar
+        </button>
+      </div>
+
+      <div id="users">
+        <h4>Nenhum usuário filtrado</h4>
+      </div>
+
+      <div id="statistics">
+        <h4>Nada a ser exibido</h4>
+      </div>
+    </div>
+    <script defer src="./js/script.js"></script>
+  </body>
+</html>
